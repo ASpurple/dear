@@ -6,6 +6,7 @@
 			width: 300px; height: 300px;
 			margin: 150px auto;
 			transform-style: preserve-3d;
+			-webkit-transform-style: preserve-3d;
 			animation: am 50s;
 			-moz-animation: am 50s;
 			-webkit-animation: am 50s;

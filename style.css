@@ -6,9 +6,9 @@
 			width: 300px; height: 300px;
 			margin: 150px auto;
 			transform-style: preserve-3d;
-			animation: am 20s;
-			-moz-animation: am 20s;
-			-webkit-animation: am 20s;
+			animation: am 50s;
+			-moz-animation: am 50s;
+			-webkit-animation: am 50s;
 			animation-iteration-count:infinite;
 			-webkit-animation-iteration-count:infinite;
 			-moz-animation-iteration-count:infinite;
@@ -59,7 +59,7 @@
 				-webkit-transform:rotateX(0deg)rotateY(0deg);
 				-moz-transform:rotateX(0deg)rotateY(0deg);
 			}
-			50%{
+			30%{
 				transform:rotateX(720deg)rotateY(720deg);
 				-webkit-transform:rotateX(720deg)rotateY(720deg);
 				-moz-transform:rotateX(720deg)rotateY(720deg);
@@ -82,7 +82,7 @@
 				-webkit-transform:rotateX(0deg)rotateY(0deg);
 				-moz-transform:rotateX(0deg)rotateY(0deg);
 			}
-			50%{
+			30%{
 				transform:rotateX(720deg)rotateY(720deg);
 				-webkit-transform:rotateX(720deg)rotateY(720deg);
 				-moz-transform:rotateX(720deg)rotateY(720deg);
@@ -105,7 +105,7 @@
 				-webkit-transform:rotateX(0deg)rotateY(0deg);
 				-moz-transform:rotateX(0deg)rotateY(0deg);
 			}
-			50%{
+			30%{
 				transform:rotateX(720deg)rotateY(720deg);
 				-webkit-transform:rotateX(720deg)rotateY(720deg);
 				-moz-transform:rotateX(720deg)rotateY(720deg);

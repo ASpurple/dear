@@ -1,5 +1,6 @@
 		body{
 			background-color: #1b829c;
+			perspective: 5000;
 		}
 		.box{
 			position: relative;

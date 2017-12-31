@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<title>3Dbox</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+	<div id = "box" class = "_box">
+		<img src="asset/t1.jpg" alt="" class = "m1">
+		<img src="asset/t2.jpg" alt="" class = "m2">
+		<img src="asset/t3.jpg" alt="" class = "m3">
+		<img src="asset/t4.jpg" alt="" class = "m4">
+		<img src="asset/t5.jpg" alt="" class = "m5">
+		<img src="asset/t6.jpg" alt="" class = "m6">
+	</div>
+	<script>
+		/*判断图片是否全部加载完毕，如加载完毕改变容器类名执行CSS动画*/
+		var imgs = document.getElementsByTagName("img");
+		var imgNum = 0;
+		for(let i = 0;i < imgs.length;i++){
+			imgs[i].onload = function(){
+			imgNum++;
+				if(imgNum == imgs.length){
+					document.getElementById("box").className = "box";
+				}
+			}
+		}
+	</script>
+	<script src="main.js"></script>
+</body>
+</html>

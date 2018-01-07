@@ -18,7 +18,7 @@
 		s.style.position = "absolute";
 		s.style.left = ran(0,cw) + "px";
 		s.style.top = ran(0,ch) + "px";
-		s.style.boxShadow = "0px 0px 8px #fff";
+		s.style.boxShadow = "0px 0px 5px #fff";
 		s.style.opacity = "0";
 		box.appendChild(s);
 		var op = 0;
@@ -36,7 +36,7 @@
 			s.style.opacity = op/100;
 		},20);
 	}
-	//生成随机数
+	//脡煤鲁脡脣忙禄煤脢媒
 	function ran(x,y){
 		var r = Math.random()*(y-x)+x;
 		return Math.floor(r);

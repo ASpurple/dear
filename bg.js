@@ -10,9 +10,10 @@
 	var acolor = ["#FF4500","#EE00EE","#912CEE","#7FFFD4","#00EE76","#EEEE00","#FFFF00","#FF0000"];
 	function Star(){
 		var s = document.createElement("span");
+		var size = ran(2,6) + "px";
 		s.style.display = "block";
-		s.style.width = "4px";
-		s.style.height = "4px";
+		s.style.width = size;
+		s.style.height = size;
 		s.style.borderRadius = "50%";
 		s.style.backgroundColor = acolor[ran(0,acolor.length)];
 		s.style.position = "absolute";
@@ -36,7 +37,7 @@
 			s.style.opacity = op/100;
 		},20);
 	}
-	//Éú³ÉËæ»úÊý
+	//Ã‰ÃºÂ³Ã‰Ã‹Ã¦Â»ÃºÃŠÃ½
 	function ran(x,y){
 		var r = Math.random()*(y-x)+x;
 		return Math.floor(r);

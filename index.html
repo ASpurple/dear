@@ -16,29 +16,29 @@
 			<img src="asset/t5.jpg" alt="" class = "m5">
 			<img src="asset/t6.jpg" alt="" class = "m6">
 		</div>
-	</div>
-	<script>
-		/*判断图片是否全部加载完毕，如加载完毕改变容器类名执行CSS动画*/
-		var imgs = document.getElementsByTagName("img");
-		var imgNum = 0;
-		for(let i = 0;i < imgs.length;i++){
-			imgs[i].onload = function(){
-			imgNum++;
-				if(imgNum == imgs.length){
-					document.getElementsByTagName("link")[0].href = "style.css";
+		<audio src="./asset/bgmusic.mp3" id="music"></audio>
+		<script>
+		     document.getElementById('music').play(); 
+		    //微信必须加入Weixin JSAPI的WeixinJSBridgeReady才能生效 
+		    document.addEventListener("WeixinJSBridgeReady", function () { 
+			document.getElementById('music').play(); 
+		    }, false); 
+		</script>
+		<script>
+			/*判断图片是否全部加载完毕，如加载完毕改变容器类名执行CSS动画*/
+			var imgs = document.getElementsByTagName("img");
+			var imgNum = 0;
+			for(let i = 0;i < imgs.length;i++){
+				imgs[i].onload = function(){
+				imgNum++;
+					if(imgNum == imgs.length){
+						document.getElementsByTagName("link")[0].href = "style.css";
+					}
 				}
 			}
-		}
-	</script>
-	<script src="bg.js"></script>
-	<script src="main.js"></script>
-	<audio src="./asset/bgmusic.mp3" id="music"></audio>
-	<script>
-	     document.getElementById('music').play(); 
-	    //微信必须加入Weixin JSAPI的WeixinJSBridgeReady才能生效 
-	    document.addEventListener("WeixinJSBridgeReady", function () { 
-		document.getElementById('music').play(); 
-	    }, false); 
-	</script>
+		</script>
+		<script src="bg.js"></script>
+		<script src="main.js"></script>
+	</div>
 </body>
 </html>

@@ -25,7 +25,7 @@
 			imgs[i].onload = function(){
 			imgNum++;
 				if(imgNum == imgs.length){
-					document.getElementsByTagName("link").href = "style.css";
+					document.getElementsByTagName("link")[0].href = "style.css";
 				}
 			}
 		}

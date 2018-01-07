@@ -4,24 +4,11 @@
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 	<title>欧阳花花</title>
-	<link rel="stylesheet" href="style.css" type="text/css">
-	<style>	
-		html, body { 
-			background: #000;
-			margin: 0; 
-			padding:0;
-		}
-		canvas {
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			top: 0;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div id="bg">
-		<div id = "box" class = "_box">
+		<div id = "box" class = "box">
 			<img src="asset/t1.jpg" alt="" class = "m1">
 			<img src="asset/t2.jpg" alt="" class = "m2">
 			<img src="asset/t3.jpg" alt="" class = "m3">
@@ -38,7 +25,7 @@
 			imgs[i].onload = function(){
 			imgNum++;
 				if(imgNum == imgs.length){
-					document.getElementById("box").className = "box";
+					document.getElementsByTagName("link").href = "style.css";
 				}
 			}
 		}

@@ -6,7 +6,7 @@
 	box.style.backgroundColor = "#000";
 	box.style.position = "fixed";
 	box.style.left = 0;
-	box.style.right = 0;
+	box.style.top = 0;
 	var acolor = ["#FF4500","#EE00EE","#912CEE","#7FFFD4","#00EE76","#EEEE00","#FFFF00","#FF0000"];
 	function Star(){
 		var s = document.createElement("span");

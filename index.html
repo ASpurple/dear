@@ -20,19 +20,6 @@
 	</style>
 </head>
 <body>
-	<audio src="./asset/bgmusic.mp3" id="music"></audio>
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-      			function audioAutoPlay() {
-          			var audio = document.getElementById('music');
-              			audio.play();
-          			document.addEventListener("WeixinJSBridgeReady", function () {
-              			audio.play();
-          			}, false);
-      			}
-      			audioAutoPlay();
-  		});
-	</script>
 	<div id="bg">
 		<div id = "box" class = "_box">
 			<img src="asset/t1.jpg" alt="" class = "m1">
@@ -58,5 +45,13 @@
 	</script>
 	<script src="bg.js"></script>
 	<script src="main.js"></script>
+	<audio src="./asset/bgmusic.mp3" id="music"></audio>
+	<script>
+	     document.getElementById('music').play(); 
+	    //微信必须加入Weixin JSAPI的WeixinJSBridgeReady才能生效 
+	    document.addEventListener("WeixinJSBridgeReady", function () { 
+		document.getElementById('music').play(); 
+	    }, false); 
+	</script>
 </body>
 </html>

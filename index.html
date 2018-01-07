@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div id="bg">
-		<div id = "box" class = "box">
+		<div id = "box" class = "box" style="display: none">
 			<img src="asset/t1.jpg" alt="" class = "m1">
 			<img src="asset/t2.jpg" alt="" class = "m2">
 			<img src="asset/t3.jpg" alt="" class = "m3">
@@ -32,6 +32,7 @@
 				imgs[i].onload = function(){
 				imgNum++;
 					if(imgNum == imgs.length){
+						document.getElementById("box").style.display = "block";
 						document.getElementsByTagName("link")[0].href = "style.css";
 					}
 				}

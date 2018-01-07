@@ -213,3 +213,6 @@
 				-moz-transform:rotateY(-180deg);
 			}
 		}
+		#box{
+			visibility: visible;
+		}

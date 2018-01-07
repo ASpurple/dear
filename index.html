@@ -18,7 +18,10 @@
 		</div>
 		<audio src="./asset/bgmusic.mp3" id="music"></audio>
 		<script>
-		     document.getElementById('music').play(); 
+		    var audio = document.getElementById('music');
+		    audio.onloademetadata = function(){
+		    	audio.play();
+		    };
 		    //微信必须加入Weixin JSAPI的WeixinJSBridgeReady才能生效 
 		    document.addEventListener("WeixinJSBridgeReady", function () { 
 			document.getElementById('music').play(); 

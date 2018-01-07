@@ -18,17 +18,14 @@
 		</div>
 		<audio src="./asset/bgmusic.mp3" id="music"></audio>
 		<script>
-		    var audio = document.getElementById('music');
-		    var audioTimer = setInterval(function(){
-		    	if(audio.readyState == 4){
+		        var audio = document.getElementById('music');
+			audio.canplay = function(){
 				audio.play();
-				clearInterval(audioTimer);
 			}
-		    },50);
-		    //微信必须加入Weixin JSAPI的WeixinJSBridgeReady才能生效 
-		    document.addEventListener("WeixinJSBridgeReady", function () { 
-			document.getElementById('music').play(); 
-		    }, false); 
+		        //微信必须加入Weixin JSAPI的WeixinJSBridgeReady才能生效 
+		        document.addEventListener("WeixinJSBridgeReady", function () { 
+				audio.play(); 
+		        }, false); 
 		</script>
 		<script>
 			/*判断图片是否全部加载完毕*/

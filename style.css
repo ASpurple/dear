@@ -214,5 +214,5 @@
 			}
 		}
 		#box{
-			visibility: visible;
+			visibility: visible !important;
 		}

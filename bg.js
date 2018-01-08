@@ -42,7 +42,7 @@
 		var r = Math.random()*(y-x)+x;
 		return Math.floor(r);
 	}
-	for(var i=0;i<125;i++){
+	for(var i=0;i<99;i++){
 		setTimeout(Star,i*20);
 	}
 })(document.getElementById("bg"));
